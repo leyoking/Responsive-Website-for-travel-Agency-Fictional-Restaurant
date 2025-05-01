@@ -1,0 +1,117 @@
+
+.hero{
+  background-image: url(/images/plages-dassinie.jpg);
+  height: 800px;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: slideRight 1.5s ease-in-out forwards;
+  position: relative;
+}
+h1{
+  font-family: poppin;
+  color: #0d6efd;
+}
+.hero form input[type=button]{
+
+  height: 50px;width: 300px;
+  font-size: large;
+  border-radius: 20PX;
+  background-color: #f4f5f7;
+  color: #0d6efd;
+  transition: 0.7s;
+}
+.hero form input[type=button]:hover{
+  box-shadow: 2px black;
+  transform: translateY(-5px);
+  background-color: #0d6efd;
+  color: white;
+}
+.desc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  margin-top: 30px;
+  border-top: black solid 2px ;
+  margin-left: 30PX;
+  margin-right: 30PX;
+  padding-top: 40px;
+}
+.voy{
+  display: flex;
+  flex-direction: column;
+
+}
+.hero h1{
+  font-size: 300px;
+  color: white;
+}
+.container header a:hover{
+  background-color: #0d6efd;
+  color: white;
+  transition: 0.9s;
+}
+.container header{
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .hero h1{
+    font-size: 160px;
+  }
+}
+@media screen and (max-width: 600px){
+  .container header{
+    justify-content: center;
+  }
+  
+  
+  .hero{
+    background-image: url(/images/plages-dassinie.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .hero h1{
+    font-size: 50px;
+  }
+  .hero form input{
+    height: 30px;width: 250px;
+    font-size: AUTO;
+  }
+}
+
+/* Définition de l'animation */
+@keyframes slideRight {
+  0% {
+    left: -900px;
+    opacity: 0.2;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.fcontact{
+  display: flex;
+  flex-direction:column; 
+  justify-content: center;
+}
+
+.fcontact form button{
+  color: black;
+  background-color: #0d6efd;
+}
